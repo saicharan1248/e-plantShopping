@@ -3,11 +3,12 @@ import React, { useState } from 'react';
 import ProductList from './ProductList';
 import './App.css';
 import AboutUs from './AboutUs';
+import addItem  from './CartSlice.jsx';
 
 function App() {
   
   const [showProductList, setShowProductList] = useState(false);
-
+const [addedToCart, setAddedToCart] = useState({});
   const handleGetStartedClick = () => {
     setShowProductList(true);
   };
